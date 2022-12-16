@@ -1,65 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Montserrat",sans-serif;
+    list-style: none;
+    text-decoration: none;;
 }
 
-.hero { 
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Images/bg.jpg);
-    background-size: cover;
-    background-position: center;
+body {
+    background: black;
 }
 
-nav {
+header {
+    width: 100%; 
+    height: 120px;
+    background: white;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    justify-content: space-between;
+    padding: 0 250px;
 }
 
-.logo { 
-    color: white;
-    padding-right: 60%;
+.logo {
+    display: flex;
 }
 
 .logo img {
     width: 100px;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
+.logo h1 {
+    color: #424c38;
+    padding: 30px 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hamburger {
+    display: none; 
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    font-size: 20px;
     padding: 10px 40px;
-    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
 }
 
-nav ul li a{
+.nav-bar ul li a:hover { 
+    color: #66854a;
+}
+
+.nav-bar ul li a.active {
+    color: #66854a;
+}
+
+#login {
+    margin-left: 40px;
     color: white;
-    text-decoration: none;
-    font-weight: bold; 
+    background: #66854a;
+    
 }
 
-nav ul li a:hover{
-    color: #9ec83e;
-    transition: .3s;
+@media only screen and (max-width: 1700px) {
+    header {
+        padding: 0 200px;
+    }
 }
 
-button {
-    border: none;
-    background:#9ec83e;
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: .4s;
+@media only screen and (max-width: 1600px) {
+    header {
+        padding: 0 150px;
+    }
 }
 
-button:hover{
-    transform: scale(1.3);
+@media only screen and (max-width: 1500px) {
+    header {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #424c38;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: white;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 300px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 1s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    #login {
+        margin-left: 5px;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
 }
