@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat",sans-serif;
     list-style: none;
     text-decoration: none;;
 }
 
+body {
+    height: 300vw;
+    min-height: 2000px;
+}
 
 header {
     width: 100%; 
@@ -18,7 +26,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid black;
+    padding: 0 250px;
+    font-family: "Montserrat",sans-serif;
+    font-weight:normal;
+    position: fixed;
+    border-bottom: 3px solid black;
 }
 
 .logo {
@@ -30,7 +42,7 @@ header {
 }
 
 .logo h1 {
-    color: #424c38;
+    color: #043927;
     padding: 10px 0;
     font-family: 'Playfair Display', serif;
 }
@@ -46,7 +58,7 @@ header {
 .nav-bar ul li a {
     position: relative;
     display: block;
-    color: #424c38;
+    color: #043927;
     font-size: 18px;
     padding: 10px 5px;
     border-radius: 50px;
@@ -59,7 +71,7 @@ header {
 .nav-bar ul li a:after {
     content: "";
     position: absolute;
-    background-color: #424c38;
+    background-color: #043927;
     height: 3px;
     width: 0;
     left: 0;
@@ -73,10 +85,10 @@ header {
 .btn {
     font-size: 18px;
     margin-left: 40px;
-    color: #424c38;
+    color: #043927;
     padding: 10px 50px;
     min-width: 200px;
-    border: 2px solid #424c38;
+    border: 2px solid #043927;
     cursor: pointer;
     color: color 0.4s linear;
     position: relative;
@@ -84,6 +96,7 @@ header {
     overflow: hidden;
     z-index: 0;
     background-color: white;
+    font-family: "Montserrat",sans-serif;
 }
 
 .btn:hover {
@@ -98,7 +111,7 @@ header {
     width: 0;
     height: 100%;
     z-index: -1;
-    background-color: #424c38;
+    background-color: #043927;
     transition: 0.3s all ease-in-out 0s;
 }
 
@@ -146,13 +159,13 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #424c38;
+        background: #043927;
         margin: 6px 0;
     }
     .nav-bar {
         height: 0;
         position: absolute;
-        top: 120px;
+        top: 70px;
         left: 0;
         right: 0;
         width: 100vw;
@@ -160,6 +173,7 @@ header {
         transition: 0.3s;
         overflow: hidden;
     }
+
     .nav-bar.active {
         height: 300px;
     }
@@ -182,9 +196,37 @@ header {
     }
 }
 
+.first {
+    display: flex;
+}
+
 .banner {
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url("Images/forest.jpg");
+    padding-top: 270px;
+    padding-left: 10%;
+    color: black;
+    font-weight: lighter;
+    font-size: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid red;
+}
+
+.banner h1 {
+    padding: 4vh 0;
+    font-size: 15vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1875&q=80");
     background-size: cover;
-    height: 100vh;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.pic1 {
+    padding: 30px;
+    width: 60%;
+    border: 2px solid red;
+}
+
+#forest {
+    width: 100%;
 }
