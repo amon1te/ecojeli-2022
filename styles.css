@@ -10,9 +10,6 @@
     text-decoration: none;;
 }
 
-body {
-    background: black;
-}
 
 header {
     width: 100%; 
@@ -21,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 250px;
+    border: 2px solid black;
 }
 
 .logo {
@@ -77,7 +74,6 @@ header {
     font-size: 18px;
     margin-left: 40px;
     color: #424c38;
-
     padding: 10px 50px;
     min-width: 200px;
     border: 2px solid #424c38;
@@ -86,7 +82,8 @@ header {
     position: relative;
     transition: 0.3s all ease-in-out 0s;
     overflow: hidden;
-    z-index: 2;
+    z-index: 0;
+    background-color: white;
 }
 
 .btn:hover {
@@ -183,4 +180,11 @@ header {
     .nav-bar ul li a {
         margin-bottom: 12px;
     }
+}
+
+.banner {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1)), url("Images/forest.jpg");
+    background-size: cover;
+    height: 100vh;
 }
