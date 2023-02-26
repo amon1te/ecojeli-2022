@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <title>Ecojeli  </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="Images/Ecojeli_logo_trans.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Ecojeli</title>
 </head>
 <body>
     <header>
@@ -23,29 +27,73 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="" class="active">Главная</a>
+                    <a href="#" class="not-login">Главная</a>
                 </li>
                 <li>
-                    <a href="">О нас</a>
+                    <a class="not-login" href="aboutUs.html">О нас</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a class="not-login" href="contact.html">Контакты</a>
                 </li>
                 <li>
-                    <button type="button" class="btn">Логин</button>
+                    <a href="login.html" target="_blank">
+                        <button type="button" class="btn">Логин</button>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="first">
-        <div class="banner">
-            <h4>Встречайте, </h4>
-            <h1>ecojeli</h1>
-            <h4>клуб защиты </h4>
-            <h4>окружающей среды</h4>
-        </div>
-        <div class="pic1"><img id="forest" src="Images/forest.jpg" alt=""></div>
+    <div class="empty"></div>
+    <div class="main">
+        <h3>Добро пожаловать в</h3>
+        <div class="title"></div>
     </div>
+    <div class="sum">
+        <div class="two">
+            <div class="problem">
+                <h1>ПРОБЛЕМА</h1>
+            </div>
+            <div class="image1"></div>
+        </div>
+        <div class="info">
+            <h4>
+            Резка деревьев, также известная как дефорестация, является крупной экологической проблемой, которая затрагивает всю планету. Дефорестация происходит, когда леса сносятся по различным причинам, таким как для образования земель для земледелия, городского развития и лесозаготовки для коммерческого использования. Одной из ключевых проблем, вызванной дефорестацией, является потеря биоразнообразия. Леса являются домом для бесчисленного количества видов растений и животных, многие из которых не найдены нигде еще на Земле. При уничтожении лесов эти виды часто вымирают. Дефорестация также нарушает естественные циклы и процессы, необходимые для обеспечения жизни на Земле, такие как цикл воды, цикл углерода и кислорода. Резка деревьев также приводит к изменению климата, увеличению газов парникового эффекта и снижению количества осадков. </h4></div>
+    </div>
+    <div class="solution">
+        <div class="title-solution">
+            <h1>НАШЕ РЕШЕНИЕ</h1>
+        </div>
+        <div class="text-solution">
+            <h4>Переработка бумаги - это процесс восстановления использованной бумаги и преобразования ее в новые бумажные продукты. Это помогает сохранять природные ресурсы, уменьшать количество отходов, которые оказываются на свалках, и уменьшать выбросы газов, способствующих изменению климата. Кроме того, Переработка бумаги экономит энергию, так как производство новой бумаги из переработанной бумаги требует меньше энергии, чем изделия из сырья. Она также помогает создавать рабочие места и поддерживать местную экономику. В целом, Переработка бумаги является важной частью продвижения устойчивого развития и уменьшения воздействия на окружающую среду в процессе производства бумаги.</h4>
+        </div>
+    </div>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="Images/06d59dbc-f159-47fa-9c91-c1f13dbe5258.jpg" alt="">
+                <img id="slide-2" src="Images/12eb94ed-b39e-44fd-868a-866e8a5bc3a1.jpg" alt="">
+                <img id="slide-3" src="Images/8b513da2-461c-4aa3-98cb-90400a3244ad.jpg" alt="">
+                <img id="slide-4" src="Images/d97e442f-fd65-4232-b322-edf83908c7a1.jpg" alt="">
+                <img id="slide-5" src="Images/da12071e-da65-4f46-b33d-1c2b5cd9e891.jpg" alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+    <div class='footer'>
+        <div class="social">
+          <a href="https://www.instagram.com/ecoclub_nisofficial/"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <p class="copyright">Ecojeli @ 2023</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
