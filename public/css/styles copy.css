@@ -211,7 +211,7 @@ header {
 .main {
     width: 100vw;
     height: 77.5vw;
-    background-image: url("Images/tree2.png");
+    background-image: url("/public/Images/tree2.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -220,7 +220,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
     .main {
-        background-image: url("Images/tree2mobile.png");
+        background-image: url("/public/Images/tree2mobile.png");
         background-size: cover;
         height: 100vw;
     }
@@ -238,7 +238,7 @@ header {
     margin-top: -1vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(Images/text2.png);
+    background-image: url(/public/Images/text2.png);
     height: 18vw;
     width: auto;
 }

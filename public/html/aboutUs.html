@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contact-styles.css">
+  <link rel="stylesheet" href="/public/css/aboutUs-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <link rel="shortcut icon" href="Images/Ecojeli_logo_trans.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/public/Images/Ecojeli_logo_trans.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Login/Register</title>
+  <title>О нас</title>
 </head>
 <body>
   <header>
@@ -25,43 +25,31 @@
     </div>
     <nav class="nav-bar">
         <ul>
+          <li>
+            <a href="/public/html/index.html" class="not-login">Главная</a>
+        </li>
+        <li>
+            <a class="not-login" href="/public/html/aboutUs.html">О нас</a>
+        </li>
+        <li>
+            <a class="not-login" href="/public/html/contact.html">Контакты</a>
+        </li>
             <li>
-                <a href="index.html" class="active">Главная</a>
-            </li>
-            <li>
-                <a href="">О нас</a>
-            </li>
-            <li>
-                <a href="">Контакты</a>
-            </li>
-            <li>
+              <a href="/public/html/login.html" target="_blank">
                 <button type="button" class="btn">Логин</button>
+            </a>
             </li>
         </ul>
     </nav>
   </header>
   <div class="empty"></div>
   <div class="main">
-    <div class="first">
-      <h1>Свяжитесь с нами</h1>
-      <div class="photo"></div>
-    </div>
-    <div class="second">
-      <div class="nam">
-        <h3>ФИО</h3>
-        <input type="email" placeholder="" autocomplete="off" class="name" required>
-      </div>
-      <div class="emai">
-        <h3>Почта</h3>
-        <input type="name" placeholder= "" autocomplete="off" class="email" required>
-      </div>
-      <div class="commen">
-        <h3>Коммент</h3>
-        <textarea id="my-Text" class="comment" rows="5" placeholder=""></textarea>
-      </div>
-      <p id="result">0/60</p>
-      <button class="submit-btn">Отправить</button>
-    </div>
+    <h1>Кто мы такие?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet deleniti vero praesentium. Numquam in tenetur consectetur pariatur tempora vero atque nemo eligendi laborum quam nulla voluptates, maiores, amet commodi ullam nesciunt, beatae eveniet consequuntur fugiat facilis libero voluptas. 
+  </div>
+  <div class="team">
+    <h1>Наша команда</h1>
+    <div class="image"></div>
   </div>
   <div class='footer'>
     <div class="social">
@@ -71,6 +59,6 @@
     </div>
     <p class="copyright">Ecojeli @ 2023</p>
   </div>
-  <script src="main.js"></script>
+  <script src="/public/js/main.js"></script>
 </body>
 </html>
