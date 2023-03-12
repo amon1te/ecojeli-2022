@@ -27,7 +27,7 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="#" class="not-login">Главная</a>
+                    <a href="/public/html/index.php" class="not-login">Главная</a>
                 </li>
                 <li>
                     <a class="not-login" href="/public/html/aboutUs.php">О нас</a>
