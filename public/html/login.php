@@ -4,15 +4,17 @@
 
   <link rel="stylesheet" href="/public/css/login-styles.css">
   <div class="main">
-    <div class="alaert-box">
-      <p class="alert">msg</p>
-    </div>
     <div class="form">
       <h2>Вход</h2>
-      <input type="email" placeholder="Почта" autocomplete="off" class="email" required>
-      <input type="password" placeholder="Пароль" autocomplete="off" class="password" required>
-      <button class="submit-btn">Войти</button>
-      <a href="register.html" class="link">Нет аккаунта? Зарегистрируйтесь здесь</a>
+      <form action="login-login.php" method="post">
+        <?php if (isset($_GET['error'])) { ?>
+          <p class="error"><?php echo $_GET['error'];  ?></p>
+        <?php } ?>
+        <input type="text" name="uname" placeholder="Логин" autocomplete="off" class="email">
+        <input type="password" name="password" placeholder="Пароль" autocomplete="off" class="password">
+        <button class="submit-btn">Войти</button>
+        <a href="register.html" class="link"> </a>
+      </form> 
     </div>
   </div>
   <div class='footer'>

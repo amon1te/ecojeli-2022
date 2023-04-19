@@ -211,31 +211,40 @@ header {
 .main {
   display: flex;
   padding: 7vw 0vw;
-  border: 2px solid yellow;
+  margin: 0 10vw; 
 }
 
 .first {
-  border: 2px solid red;
   width: 50%;
-  padding: 4vw;
+  padding-bottom: 1vh;
+  margin-right: 5vw;
   font-family: 'Unbounded', cursive;
   color: #043927;
-  font-size: 2vw;
+  font-size: 1.8vw;
+}
+
+@media only screen and (max-width: 1500px) {
+  .main {
+    display: block;
+    padding: 7vw 0vw;
+    margin: 0 10vw; 
+  }
 }
 
 .photo {
   margin-top: 50px;
-  border: 2px solid black;
-  height: 30vw;
-  width: 40vw;
+  height: 25vw;
+  width: 25vw;
   background-repeat: no-repeat;
-  background-image: url(Images/amon1te3_image_with_white_background_showing_the_earth_with_def_63f461f6-fb6d-482f-b7c7-e68e25ead025.png);
-  background-size: contain;
+  background-image: url(/public/Images/goutham-krishna-h5wvMCdOV3w-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
 }
 
 .second {
   padding: 50px 50px;
-  border: 2px solid green;
   width: 50%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
@@ -261,8 +270,8 @@ header {
 }
 
 input, textarea {
-  min-width: 190px;
-  max-width: 190px;
+  min-width: 390px;
+  max-width: 390px;
   max-height: 300px;
   padding: 6px;
 }
